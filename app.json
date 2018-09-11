@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/discovery/index",
+    "pages/discovery/detail",
+    "pages/discovery/line",
+    "pages/discovery/more",
+    "pages/account/index",
+    "pages/search/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#fff",
+    "borderStyle": "#42bd56",
+    "backgroundColor": "#42bd56",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/discovery.png",
+        "selectedIconPath": "imgs/discovery.png",
+        "text": "热映"
+      },
+      {
+        "pagePath": "pages/discovery/index",
+        "iconPath": "imgs/store.png",
+        "selectedIconPath": "imgs/store.png",
+        "text": "找片"
+      },
+      {
+        "pagePath": "pages/account/index",
+        "iconPath": "imgs/account.png",
+        "selectedIconPath": "imgs/account.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

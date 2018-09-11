@@ -1,0 +1,174 @@
+<view class="container">
+  <view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+      <view bindtap="toHot" class="top-btn {{hot}}">正在热映</view>
+      <view bindtap="toFilm" class="top-btn {{film}}">即将上映</view>
+    </scroll-view>
+  </view>
+  <scroll-view scroll-y="true">
+    <form bindsubmit="formSubmit">
+      <view class="tit">
+        <text style='width:35px;margin:5px;' bindtop="toSearch">深圳∨</text>
+        <input style='flex:1;border:1px solid #ccc;margin-right:10px;border-radius:5px' type="text" name="id" placeholder='电影/电视剧/影人' />
+      </view>
+    </form>
+    <view class="content">
+      <view class="col3-img" bindtap='toDetail'>
+        <image class="c3-actual-img" mode="scaleToFill" alt="碟中谍6：全面瓦解" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg" />
+        <view class='film-intro'>
+          <text class='title'>碟中谍6：全面瓦解</text>
+          <text class='content'>
+            导演: 克里斯托弗·麦奎里
+            编剧: 克里斯托弗·麦奎里 / 布鲁斯·盖勒
+            主演: 汤姆·克鲁斯 / 亨利·卡维尔 / 文·瑞姆斯 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" alt="快把我哥带走" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2531080870.jpg" />
+        <view class='film-intro'>
+          <text class='title'>快把我哥带走</text>
+          <text class='content'>
+            导演: 郑芬芬
+            编剧: 赵越 / 郑芬芬 / 吕旭
+            主演: 张子枫 / 彭昱畅 / 赵今麦 / 孙泽源 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" alt="碟中谍6：全面瓦解" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg" />
+        <view class='film-intro'>
+          <text class='title'>碟中谍6：全面瓦解</text>
+          <text class='content'>
+            导演: 克里斯托弗·麦奎里
+            编剧: 克里斯托弗·麦奎里 / 布鲁斯·盖勒
+            主演: 汤姆·克鲁斯 / 亨利·卡维尔 / 文·瑞姆斯 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" alt="碟中谍6：全面瓦解" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg" />
+        <view class='film-intro'>
+          <text class='title'>碟中谍6：全面瓦解</text>
+          <text class='content'>
+            导演: 克里斯托弗·麦奎里
+            编剧: 克里斯托弗·麦奎里 / 布鲁斯·盖勒
+            主演: 汤姆·克鲁斯 / 亨利·卡维尔 / 文·瑞姆斯 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img" bindtap='toLine'>
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途" />
+        <view class='film-intro'>
+          <text class='title'>阿尔法：狼伴归途</text>
+          <text class='content'>
+            导演: 艾尔伯特·休斯
+            编剧: 达恩·威登霍普 / 艾尔伯特·休斯
+            主演: 柯蒂·斯密特-麦菲 / 娜塔莎·迈尔兹 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途" />
+        <view class='film-intro'>
+          <text class='title'>阿尔法：狼伴归途</text>
+          <text class='content'>
+            导演: 艾尔伯特·休斯
+            编剧: 达恩·威登霍普 / 艾尔伯特·休斯
+            主演: 柯蒂·斯密特-麦菲 / 娜塔莎·迈尔兹 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途" />
+        <view class='film-intro'>
+          <text class='title'>阿尔法：狼伴归途</text>
+          <text class='content'>
+            导演: 艾尔伯特·休斯
+            编剧: 达恩·威登霍普 / 艾尔伯特·休斯
+            主演: 柯蒂·斯密特-麦菲 / 娜塔莎·迈尔兹 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途" />
+        <view class='film-intro'>
+          <text class='title'>阿尔法：狼伴归途</text>
+          <text class='content'>
+            导演: 艾尔伯特·休斯
+            编剧: 达恩·威登霍普 / 艾尔伯特·休斯
+            主演: 柯蒂·斯密特-麦菲 / 娜塔莎·迈尔兹 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途" />
+        <view class='film-intro'>
+          <text class='title'>阿尔法：狼伴归途</text>
+          <text class='content'>
+            导演: 艾尔伯特·休斯
+            编剧: 达恩·威登霍普 / 艾尔伯特·休斯
+            主演: 柯蒂·斯密特-麦菲 / 娜塔莎·迈尔兹 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身" />
+        <view class='film-intro'>
+          <text class='title'>蚁人2：黄蜂女现身</text>
+          <text class='content'>
+            导演: 佩顿·里德
+            编剧: 克里斯·麦克纳 / 埃里克·萨默斯 / 保罗·路德 ...
+            主演: 保罗·路德 / 伊万杰琳·莉莉 / 迈克尔·佩纳 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身" />
+        <view class='film-intro'>
+          <text class='title'>蚁人2：黄蜂女现身</text>
+          <text class='content'>
+            导演: 佩顿·里德
+            编剧: 克里斯·麦克纳 / 埃里克·萨默斯 / 保罗·路德 ...
+            主演: 保罗·路德 / 伊万杰琳·莉莉 / 迈克尔·佩纳 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身" />
+        <view class='film-intro'>
+          <text class='title'>蚁人2：黄蜂女现身</text>
+          <text class='content'>
+            导演: 佩顿·里德
+            编剧: 克里斯·麦克纳 / 埃里克·萨默斯 / 保罗·路德 ...
+            主演: 保罗·路德 / 伊万杰琳·莉莉 / 迈克尔·佩纳 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+      <view class="col3-img">
+        <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身" />
+        <view class='film-intro'>
+          <text class='title'>蚁人2：黄蜂女现身</text>
+          <text class='content'>
+            导演: 佩顿·里德
+            编剧: 克里斯·麦克纳 / 埃里克·萨默斯 / 保罗·路德 ...
+            主演: 保罗·路德 / 伊万杰琳·莉莉 / 迈克尔·佩纳 ...
+          </text>
+        </view>
+        <button class='buy-btn'>购票</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>

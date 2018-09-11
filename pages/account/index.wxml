@@ -1,0 +1,15 @@
+<view class="img-poster">
+  <view class='profile'></view>
+  <text style='font-size:15px;height:20px;'>未登录</text>
+</view> 
+<view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+        <view bindtap="toHot" class="top-btn {{hot}}">想看</view>
+        <view bindtap="toFilm" class="top-btn {{film}}">在看</view>
+        <view bindtap="toReadBook" class="top-btn {{book}}">看过</view>
+        <view bindtap="toTelv" class="top-btn {{telv}}">影评</view>
+        <view bindtap="toActive" class="top-btn {{active}}">影人</view>
+    </scroll-view>
+</view>
+<scroll-view scroll-y="true" class="content">
+</scroll-view>

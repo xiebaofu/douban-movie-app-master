@@ -1,0 +1,71 @@
+<view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+        <view bindtap="toFilm" class="top-btn {{film}}">电影</view>
+        <view bindtap="toTelv" class="top-btn {{telv}}">电视剧</view>
+    </scroll-view>
+</view>
+<scroll-view scroll-y="true" class="content">      
+    <view class="col3">
+         <view class="col3-h">
+            <text style="font-size:14px;">豆瓣热门</text>
+            <navigator bindtap='toMore' style="font-size:14px;float:right;color:#00BB00;">更多 ></navigator>
+        </view>
+        <scroll-view scroll-x="true" class="col3-img-list">
+            <view class="col3-img" bindtap='toDetail'>
+              <image class="c3-actual-img" mode="scaleToFill" alt="碟中谍6：全面瓦解" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg"/>
+            </view>
+            <view class="col3-img">
+              <image class="c3-actual-img" mode="scaleToFill" alt="快把我哥带走" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2531080870.jpg" />
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" alt="碟中谍6：全面瓦解"  src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" alt="碟中谍6：全面瓦解"  src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529365085.jpg"/>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="col3">
+         <view class="col3-h">
+            <text style="font-size:14px;">豆瓣榜单</text>
+            <navigator bindtap='toMore' style="font-size:14px;float:right;color:#00BB00">更多 ></navigator>
+        </view>
+        <scroll-view scroll-x="true" class="col3-img-list">
+            <view class="col3-img" bindtap='toLine'>
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2530871439.jpg" alt="阿尔法：狼伴归途"/>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="col3">
+         <view class="col3-h">
+            <text style="font-size:14px;">新片速递</text>
+            <navigator bindtap='toMore' style="font-size:14px;float:right;color:#00BB00;">更多 ></navigator>
+        </view>
+        <scroll-view scroll-x="true" class="col3-img-list">
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身"/>
+            </view>
+            <view class="col3-img">
+                <image class="c3-actual-img" mode="scaleToFill" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529389608.jpg" alt="蚁人2：黄蜂女现身"/>
+            </view>
+        </scroll-view>
+    </view>
+</scroll-view>
