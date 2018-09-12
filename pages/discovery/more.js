@@ -1,76 +1,65 @@
 // pages/douban/more.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    hot: 'top-hoverd-btn',
-    film: '',
-    book: '',
-    telv: '',
-    active: '',
-    music: '',
-    other: '',
-    other1: ''
+    films: app.data.films,
+    chinese: 'top-hoverd-btn',
+    actioner: '',
+    children: '',
+    anime: '',
+    science: '',
+    comedy: '',
+    suspense: ''
   },
-  onLaunch: function () {
+  onLaunch: function() {
     console.log('douban Launching ...');
   },
-  toHot: function () {
-    console.log('hot');
-    this.updateBtnStatus('hot');
+  toChinese: function() {
+    this.updateBtnStatus('chinese');
   },
-  toFilm: function () {
-    console.log('film');
-    this.updateBtnStatus('film');
+  toActioner: function() {
+    this.updateBtnStatus('actioner');
   },
-  toReadBook: function () {
-    console.log('readbook');
-    this.updateBtnStatus('book');
+  toChildren: function() {
+    this.updateBtnStatus('children');
   },
-  toTelv: function () {
-    console.log('telv');
-    this.updateBtnStatus('telv');
+  toAnime: function() {
+    this.updateBtnStatus('anime');
   },
-  toActive: function () {
-    console.log('active');
-    this.updateBtnStatus('active');
+  toScience: function() {
+    this.updateBtnStatus('science');
   },
-  toMusic: function () {
-    console.log('music');
-    this.updateBtnStatus('music');
+  toComedy: function() {
+    this.updateBtnStatus('comedy');
   },
-  toOther: function () {
-    console.log('other');
-    this.updateBtnStatus('other');
+  toSuspense: function() {
+    this.updateBtnStatus('suspense');
   },
-  toOther1: function () {
-    console.log('other1');
-    this.updateBtnStatus('other1');
-  },
-  updateBtnStatus: function (k) {
+  updateBtnStatus: function(k) {
     this.setData({
-      hot: this.getHoverd('hot', k),
-      film: this.getHoverd('film', k),
-      book: this.getHoverd('book', k),
-      telv: this.getHoverd('telv', k),
-      active: this.getHoverd('active', k),
-      music: this.getHoverd('music', k),
-      other: this.getHoverd('other', k),
-      other1: this.getHoverd('other1', k)
+      chinese: this.getHoverd('chinese', k),
+      actioner: this.getHoverd('actioner', k),
+      children: this.getHoverd('children', k),
+      anime: this.getHoverd('anime', k),
+      science: this.getHoverd('science', k),
+      comedy: this.getHoverd('comedy', k),
+      suspense: this.getHoverd('suspense', k)
     });
   },
-  getHoverd: function (src, dest) {
+  getHoverd: function(src, dest) {
     return (src === dest ? 'top-hoverd-btn' : '');
   },
-  toDetail: function () {
+  toDetail: function() {
     wx.navigateTo({
       url: 'detail',
-      success: function (res) {
+      success: function(res) {
         console.log(res)
       },
-      fail: function (err) {
+      fail: function(err) {
         console.log(err)
       }
     })
@@ -79,56 +68,56 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

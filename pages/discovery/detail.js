@@ -1,10 +1,12 @@
 // pages/douban/detail.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    films: app.data.films,
     hot: 'top-hoverd-btn',
     film: '',
     book: '',
@@ -14,42 +16,42 @@ Page({
     other: '',
     other1: ''
   },
-  onLaunch: function () {
+  onLaunch: function() {
     console.log('douban Launching ...');
   },
-  toHot: function () {
+  toHot: function() {
     console.log('hot');
     this.updateBtnStatus('hot');
   },
-  toFilm: function () {
+  toFilm: function() {
     console.log('film');
     this.updateBtnStatus('film');
   },
-  toReadBook: function () {
+  toReadBook: function() {
     console.log('readbook');
     this.updateBtnStatus('book');
   },
-  toTelv: function () {
+  toTelv: function() {
     console.log('telv');
     this.updateBtnStatus('telv');
   },
-  toActive: function () {
+  toActive: function() {
     console.log('active');
     this.updateBtnStatus('active');
   },
-  toMusic: function () {
+  toMusic: function() {
     console.log('music');
     this.updateBtnStatus('music');
   },
-  toOther: function () {
+  toOther: function() {
     console.log('other');
     this.updateBtnStatus('other');
   },
-  toOther1: function () {
+  toOther1: function() {
     console.log('other1');
     this.updateBtnStatus('other1');
   },
-  updateBtnStatus: function (k) {
+  updateBtnStatus: function(k) {
     this.setData({
       hot: this.getHoverd('hot', k),
       film: this.getHoverd('film', k),
@@ -61,63 +63,63 @@ Page({
       other1: this.getHoverd('other1', k)
     });
   },
-  getHoverd: function (src, dest) {
+  getHoverd: function(src, dest) {
     return (src === dest ? 'top-hoverd-btn' : '');
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

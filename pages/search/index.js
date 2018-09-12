@@ -1,6 +1,6 @@
 // pages/search/index.js
 // 定义数据格式
-
+var app = getApp();
 Page({
   data: {
     search: {

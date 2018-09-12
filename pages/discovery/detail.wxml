@@ -1,16 +1,4 @@
 <!--pages/douban/detail.wxml-->
-<view class="menu">
-    <scroll-view scroll-x="true" class="top-nav">
-        <view bindtap="toHot" class="top-btn {{hot}}">热门</view>
-        <view bindtap="toFilm" class="top-btn {{film}}">电影</view>
-        <view bindtap="toReadBook" class="top-btn {{book}}">读书</view>
-        <view bindtap="toTelv" class="top-btn {{telv}}">电视</view>
-        <view bindtap="toActive" class="top-btn {{active}}">活动</view>
-        <view bindtap="toMusic" class="top-btn {{music}}">音乐</view>
-        <view bindtap="toOther" class="top-btn {{other}}">其他</view>
-        <view bindtap="toOther1" class="top-btn {{other1}}">其他1</view>
-    </scroll-view>
-</view>
 <scroll-view scroll-y="true" class="content">
   <text style='font-size:15px;font-weight:bold;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;'> 碟中谍6：全面瓦解 Mission: Impossible - Fallout (2018) </text>
   <view class="img-poster">

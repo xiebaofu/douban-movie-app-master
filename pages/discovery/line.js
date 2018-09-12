@@ -1,10 +1,12 @@
 // pages/douban/line.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    films: app.data.films,
     hot: 'top-hoverd-btn',
     film: '',
     book: '',

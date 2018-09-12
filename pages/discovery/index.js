@@ -1,5 +1,7 @@
+var app = getApp();
 Page({
   data: {
+    films: app.data.films,
     film: 'top-hoverd-btn',
     telv: ''
   },

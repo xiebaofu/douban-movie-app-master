@@ -1,13 +1,9 @@
+var app = getApp();
 Page({
   data: {
+    films: app.data.films,
     hot: 'top-hoverd-btn',
-    film: '',
-    book: '',
-    telv: '',
-    active: '',
-    music: '',
-    other: '',
-    other1: ''
+    film: ''
   },
   onLaunch: function() {
     console.log('douban Launching ...');
@@ -31,7 +27,7 @@ Page({
   },
   toDetail: function() {
     wx.navigateTo({
-      url: 'detail',
+      url: '../discovery/detail',
       success: function(res) {
         console.log(res)
       },
@@ -42,7 +38,7 @@ Page({
   },
   toMore: function() {
     wx.navigateTo({
-      url: 'more',
+      url: '../discovery/more',
       success: function(res) {
         console.log(res)
       },
@@ -53,7 +49,7 @@ Page({
   },
   toLine: function() {
     wx.navigateTo({
-      url: 'line',
+      url: '../discovery/line',
       success: function(res) {
         console.log(res)
       },
