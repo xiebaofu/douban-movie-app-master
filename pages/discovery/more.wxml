@@ -23,21 +23,21 @@
   </view>
   <view class="col3">
     <scroll-view scroll-x="true" class="col3-img-list">
-      <view wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img" bindtap='toDetail'>
+      <view wx:key='loopFilms' wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img" bindtap='toDetail'>
         <image class="c3-actual-img" mode="scaleToFill" alt="{{item.title}}" src="{{item.poster}}" />
       </view>
     </scroll-view>
   </view>
   <view class="col3">
     <scroll-view scroll-x="true" class="col3-img-list">
-      <view wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img" bindtap='toDetail'>
+      <view wx:key='loopFilms' wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img" bindtap='toDetail'>
         <image class="c3-actual-img" mode="scaleToFill" alt="{{item.title}}" src="{{item.poster}}" />
       </view>
     </scroll-view>
   </view>
   <view class="col3">
     <scroll-view scroll-x="true" class="col3-img-list">
-      <view wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img" bindtap='toDetail'>
+      <view wx:key='loopFilms' wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img" bindtap='toDetail'>
         <image class="c3-actual-img" mode="scaleToFill" alt="{{item.title}}" src="{{item.poster}}" />
       </view>
     </scroll-view>

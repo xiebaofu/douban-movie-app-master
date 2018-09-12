@@ -2,7 +2,7 @@
   <view class="menu">
     <scroll-view scroll-x="true" class="top-nav">
       <view bindtap="toHot" class="top-btn {{hot}}">正在热映</view>
-      <view bindtap="toFilm" class="top-btn {{film}}">即将上映</view>
+      <view bindtap="toUpcoming" class="top-btn {{upcoming}}">即将上映</view>
     </scroll-view>
   </view>
   <scroll-view scroll-y="true">
@@ -13,7 +13,7 @@
       </view>
     </form>
     <view class="content">
-      <view wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img">
+      <view wx:key='loopFilms' wx:for="{{films}}" wx:for-index="index" wx:for-item="item" class="col3-img">
         <image class="c3-actual-img" mode="scaleToFill" alt="{{item.title}}" src="{{item.poster}}" bindtap='toDetail'/>
         <view class='film-intro'>
           <text class='title'>{{item.title}}</text>

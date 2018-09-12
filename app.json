@@ -17,25 +17,25 @@
   "tabBar": {
     "color": "#aaa",
     "selectedColor": "#fff",
-    "borderStyle": "#42bd56",
-    "backgroundColor": "#42bd56",
+    "borderStyle": "#336699",
+    "backgroundColor": "#336699",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "imgs/discovery.png",
-        "selectedIconPath": "imgs/discovery.png",
+        "iconPath": "imgs/tab_home_def@2x.png",
+        "selectedIconPath": "imgs/tab_home_sel@2x.png",
         "text": "热映"
       },
       {
         "pagePath": "pages/discovery/index",
-        "iconPath": "imgs/store.png",
-        "selectedIconPath": "imgs/store.png",
+        "iconPath": "imgs/tab_search_def@2x.png",
+        "selectedIconPath": "imgs/tab_search_sel@2x.png",
         "text": "找片"
       },
       {
         "pagePath": "pages/account/index",
-        "iconPath": "imgs/account.png",
-        "selectedIconPath": "imgs/account.png",
+        "iconPath": "imgs/tab_user_def@2x.png",
+        "selectedIconPath": "imgs/tab_user_sel@2x.png",
         "text": "我的"
       }
     ]

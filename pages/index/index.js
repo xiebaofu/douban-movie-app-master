@@ -3,23 +3,21 @@ Page({
   data: {
     films: app.data.films,
     hot: 'top-hoverd-btn',
-    film: ''
+    upcoming: ''
   },
   onLaunch: function() {
     console.log('douban Launching ...');
   },
   toHot: function() {
-    console.log('hot');
     this.updateBtnStatus('hot');
   },
-  toFilm: function() {
-    console.log('film');
-    this.updateBtnStatus('film');
+  toUpcoming: function() {
+    this.updateBtnStatus('upcoming');
   },
   updateBtnStatus: function(k) {
     this.setData({
       hot: this.getHoverd('hot', k),
-      film: this.getHoverd('film', k)
+      upcoming: this.getHoverd('upcoming', k)
     });
   },
   getHoverd: function(src, dest) {
